@@ -11,7 +11,6 @@ body {
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
 
@@ -79,6 +78,11 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
+
+.app-description {
+  text-align: left;
+}
+
 .app-links {
   border-radius: 4px;
   padding: 20px 15px;
@@ -87,4 +91,14 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .app-description {
+    text-align: center;
+  }
 }
